@@ -6,12 +6,7 @@ def add_string(str1):
           str1+='ly'
       else:
           str1+='ing'
-    
-
-  
   return str1
-
-
 print(add_string('sleep'))
 print(add_string('amazing'))
 print(add_string('is'))
@@ -25,10 +20,7 @@ def bracket_pattern(input_str):
     elif(input_str[0]==')'or input_str[-1:]=='('):
         return False
     else:
-        return True
-
-    
-
+        return True 
 print(bracket_pattern(')()((()()))'))
 print(bracket_pattern('()((())())'))
 
