@@ -113,6 +113,19 @@ def generate_dict(number):
     for i in range(1,number+1):
         new_dict[i]=i**2
     return new_dict
-
 number=20
 print(generate_dict(number))
+
+
+#PF-Prac-10
+def string_both_ends(input_string):
+	length=len(input_string)
+	if(length<2):
+	    return -1 
+	else:
+	    new=""
+	    new=input_string[0:2]+input_string[-2:]
+	    return new
+input_string="w3"
+print(string_both_ends(input_string))
+
