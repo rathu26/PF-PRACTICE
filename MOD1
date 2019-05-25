@@ -129,3 +129,36 @@ def string_both_ends(input_string):
 input_string="w3"
 print(string_both_ends(input_string))
 
+
+#PF-Prac-11
+def find_upper_and_lower(sentence):
+    #start writing your code here
+    u=0
+    l=0
+    for i in sentence:
+        if i.islower():
+            l+=1
+        elif i.isupper():
+            u+=1
+    result_list=[]
+    result_list.append(u)
+    result_list.append(l)
+    return result_list
+sentence="Come Here"
+print(find_upper_and_lower(sentence))
+
+
+#PF-Prac-12
+def generate_sentences(subjects,verbs,objects):
+    sentence_list=[]
+    for i in subjects:
+        for j in verbs:
+	        for k in objects:
+	            sentence_list.append(i+" "+j+" "+k)
+    return sentence_list
+subjects=["I","You"]
+verbs=["love", "play"]
+objects=["Hockey","Football"]
+print(generate_sentences(subjects,verbs,objects))
+
+
