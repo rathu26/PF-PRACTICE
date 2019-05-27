@@ -76,12 +76,11 @@ print(list123(nums))
 #PF-Prac-7
 def seed_no(number,ref_no):
     temp=number
-    ref=ref_no
     while number>0:
         rem=number%10
-        mul=mul*rem
+        temp=temp*rem
         number=number//10
-    if((mul*temp)==ref):
+    if(temp==ref_no):
         return True
     return False
 number=123
