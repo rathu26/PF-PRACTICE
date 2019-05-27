@@ -60,7 +60,7 @@ def count_digits_letters(sentence):
     result_list.append(count1)
     return result_list
 sentence="Infosys 123"
-print(count_digits_letters(sentence)
+print(count_digits_letters(sentence))
 
 
 #PF-Prac-6
