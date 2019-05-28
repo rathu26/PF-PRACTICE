@@ -232,4 +232,13 @@ num2=35
 print(find_gcd(num1,num2))
 
 
+#PF-Prac-25
+def list_of_count(word_list):
+    count_list=[]
+    for i in range(0,len(word_list)):
+        l=len(word_list[i])
+        count_list.append(l)
+    return count_list
 
+word_list=["cat", "Come"]
+print(list_of_count(word_list))
