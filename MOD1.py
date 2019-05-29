@@ -346,6 +346,17 @@ number_list=[1,2,3,4,5,6]
 print(exchange_list(number_list))
 
 
+PF-Prac-32
+def check_squares(number):
+    for i in range (0,number):
+        for j in range (0,number):
+            if(i*i + j*j==number):
+                return True
+    return False
+number=68
+print(check_squares(number))
+
+
 #PF-Prac-37
 def sum_of_list(num_list):
     if(len(num_list)>1):
